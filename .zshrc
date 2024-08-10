@@ -44,7 +44,7 @@ plugins=(git)
 #  Z Jump-around
 # https://github.com/rupa/z
 ###############
-source ~/Dev/dotFiles/z.sh
+source ~/.z.sh
 
 
 ###############
