@@ -7,8 +7,7 @@
 # BEFORE OS Specific Setup
 #####
 
-sudo apt-get update
-sudo apt-get install stow -y
+
 
 
 #####
