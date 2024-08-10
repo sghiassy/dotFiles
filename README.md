@@ -2,7 +2,7 @@
 
 Use GNU Stow for linking
 
-## Dev Setup
+## Setup on a new Host
 
 ```
 git clone https://github.com/sghiassy/dotFiles.git ~/.dotFiles
