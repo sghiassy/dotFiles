@@ -3,6 +3,14 @@
 sudo apt-get update
 sudo apt update
 
+## Instal ZSH
+sudo apt install zsh -y
+
+## Install Oh-my-ZSH in "unattended mode"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# remove default .zshrc file created in the install step because we'll have created it anyways
+rm ~/.zshrc
+
 # Install Stow
 sudo apt install stow -y
 
