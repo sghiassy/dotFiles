@@ -35,7 +35,7 @@ source ~/.powerlevel10k/powerlevel10k.zsh-theme
 ###############
 #  Oh-my-ZSH
 ###############
-export ZSH="/Users/sghiassy/.oh-my-zsh"
+export ZSH=~/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
