@@ -238,7 +238,7 @@ function change_directory() {
 ###################
 alias ast="open -a /Applications/Android\ Studio.app"
 alias ats="open -a /Applications/Android\ Studio.app"
-export ANDROID_HOME=/Users/sghiassy/Library/Android/sdk
+export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools
 export PATH=${PATH}:$ANDROID_HOME/platform-tools
 export ANDROID_NDK=~/Library/Android/sdk/ndk-bundle
@@ -304,10 +304,14 @@ alias nvmset="setnvm"
 #  Google Cloud SDK
 ###############
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/Library/Mobile Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/path.zsh.inc" ]; then 
+  . "$HOME/Library/Mobile Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/path.zsh.inc"
+fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/Library/Mobile Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/completion.zsh.inc" ]; then 
+  . "$HOME/Library/Mobile Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/completion.zsh.inc"
+fi
 
 
 ###############
@@ -316,8 +320,8 @@ if [ -f '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/g
 #  THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #
 ###############
-export SDKMAN_DIR="/Users/sghiassy/.sdkman"
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/sghiassy/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
 # >>> conda initialize >>>
