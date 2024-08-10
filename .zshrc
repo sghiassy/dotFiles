@@ -27,7 +27,6 @@ fi
 #  P10K Theme
 #  https://github.com/romkatv/powerlevel10k#oh-my-zsh
 ###############
-
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -37,7 +36,7 @@ source ~/.powerlevel10k/powerlevel10k.zsh-theme
 #  Oh-my-ZSH
 ###############
 export ZSH="~/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
 
