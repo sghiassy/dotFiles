@@ -1,9 +1,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block, everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Function to check if the operating system is macOS
 is_macos() {
@@ -129,13 +130,9 @@ alias reload="source ~/.zshrc"
 alias matebash="mate ~/.zshrc"
 alias mategit="mate ~/.gitconfig"
 alias matehg="mate ~/.hgrc"
-alias matebashold="mate /Users/sghiassy/Sync/Google\ Drive\ \(shaheen@ghiassy.com\)/Dropbox/dotFiles/bash_profile"
 alias cddev="cd ~/Dev"
 alias cdgroupon="cd ~/Dev/G/"
 alias cdsync="cd ~/Sync"
-
-## Need to `pip install pyautogui`
-alias move="cd /Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Data/MoveMouse; yarn start"
 
 # From: https://gist.github.com/SheldonWangRJT/8d3f44a35c8d1386a396b9b49b43c385
 # Need to install first: `brew install ffmpeg; brew install gifsicle`
@@ -442,20 +439,12 @@ if [ -f '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/g
 
 ###############
 #
-#  AirFlow
-#
-###############
-export AIRFLOW_HOME=/Users/sghiassy/Dev/li/airflow
-
-
-###############
-#
 #  SDKMan
 #  THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #
 ###############
 export SDKMAN_DIR="/Users/sghiassy/.sdkman"
-[[ -s "/Users/sghiassy/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/sghiassy/.sdkman/bin/sdkman-init.sh"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/sghiassy/.sdkman/bin/sdkman-init.sh"
 
 
 # >>> conda initialize >>>
@@ -472,7 +461,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-
 
 
