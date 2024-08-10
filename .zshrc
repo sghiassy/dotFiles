@@ -64,7 +64,6 @@ alias matebash="mate ~/.zshrc"
 alias mategit="mate ~/.gitconfig"
 alias matehg="mate ~/.hgrc"
 alias cddev="cd ~/Dev"
-alias cdgroupon="cd ~/Dev/G/"
 alias cdsync="cd ~/Sync"
 
 # From: https://gist.github.com/SheldonWangRJT/8d3f44a35c8d1386a396b9b49b43c385
@@ -116,12 +115,6 @@ alias gcep="git config user.email shaheen.ghiassy@gmail.com"
 alias pack="cat package.json | jq '.[\"scripts\"]'"
 
 ################
-# Mercurial Aliases
-################
-# alias gh="hg "
-
-
-################
 # Sapling Aliases
 ################
 alias sls="sld; echo '\n'; sl status; echo '\n'; sl"
@@ -135,8 +128,6 @@ alias slb="sl bookmark "
 alias slbd="sl bookmark --delete "
 alias slg="sl goto "
 alias slf="sl fold --from "
-
-
 
 ################
 # GitIgnore File
@@ -224,11 +215,6 @@ ios/Example/Pods/Natrium/bin/natrium.lock
 .webpack" >.gitignore
 }
 
-################
-# Flutter
-################
-export PATH="$PATH:/Users/sghiassy/Dev/Flutter/bin"
-
 
 ################
 #  Set GREP Default Configuration (GREP doesn't have a config file)
@@ -244,33 +230,6 @@ alias clean="rm -rf ~/Library/Developer/Xcode/DerivedData/*"
 alias nuke="rm -rf ~/.cocoapods && rm -rf ~/.gradle && rm -rf ~/Library/Caches/Cocoapods && rm -rf ~/Library/Developer/Xcode/DerivedData && rm -rf ~/local-repo && rm -rf /tmp/ModuleCache.noindex && sudo rm -rf /private/var/tmp/_bazel_* && rm -rf ~/.bw/cache/ && bazel clean --expunge"
 alias cdclean="cd ~/Library/Developer/Xcode/DerivedData/"
 
-###################
-# Groupon Aliases
-###################
-alias cdag="change_directory AirGap"
-alias cddd="change_directory dealdetails.groupon.mobile"
-alias cdch="change_directory checkout.groupon.mobile"
-alias cdan="change_directory Antenna"
-alias cdi8="change_directory i18n"
-alias cdi8n="change_directory i18n"
-alias cdmg="change_directory mobileGIG"
-alias cdmga="change_directory MGA"
-alias cdbc="change_directory Business-Cat"
-alias cdpv="change_directory PureView"
-alias cdma="change_directory mobile-api-specs"
-alias cdsm="change_directory smart_contracts"
-alias cdsmart="change_directory smart_contracts"
-alias cdnst="change_directory GPNST"
-alias cdns="change_directory GPNST"
-alias cdde="change_directory device"
-alias cddevice="change_directory device"
-alias cdgu="change_directory GrouponUtils"
-alias cdutil="change_directory GrouponUtils"
-alias cdra="change_directory GPRaptorEngine"
-alias cdrap="change_directory GPRaptorEngine"
-
-# sets ttl to 65 to bypass verizon
-alias ttl="sudo sysctl -w net.inet.ip.ttl=65"
 
 function change_directory() {
   if [ -d $1 ]; then
@@ -348,20 +307,8 @@ alias nvmset="setnvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-
-
 ###############
-#
-#  Volta
-#
-###############
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-###############
-#
 #  Google Cloud SDK
-#
 ###############
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sghiassy/Library/Mobile\ Documents/com~apple~CloudDocs/aaa/Dev/google-cloud-sdk/path.zsh.inc'; fi
