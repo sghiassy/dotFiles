@@ -25,3 +25,5 @@ _darcs
 .DS_Store
 
 scripts
+
+com.googlecode.iterm2.plist
