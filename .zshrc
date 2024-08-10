@@ -41,20 +41,14 @@ plugins=(git)
 
 
 ###############
-#
-#  Z Configuration
-#
+#  Z Jump-around
+# https://github.com/rupa/z
 ###############
-# Installation Instructions:
-#    brew install z
-# source /usr/local/etc/profile.d/z.sh (used to be this during x86 cpus)
-source /opt/homebrew/etc/profile.d/z.sh
+source ~/Dev/dotFiles/z.sh
 
 
 ###############
-#
 #  Aliases
-#
 ###############
 alias o="open ."
 alias ls="eza -la"
