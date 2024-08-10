@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-
-
-
 #####
 # BEFORE OS Specific Setup
 #####
-
-
 
 
 #####
@@ -22,9 +17,9 @@ is_linux() {
 }
 
 if is_macos; then
-  source ./setup_osx.sh
+  source ./scripts/setup_osx.sh
 elif is_linux; then
-  source ./setup_linux.sh
+  source ./scripts/setup_linux.sh
 else
   echo "Error 654efd: What kind of OS is this???: $OSTYPE"
   exit 1
