@@ -1,0 +1,11 @@
+# Default Style
+fontSize = 16
+fontName = "Dank Mono"
+theme = "B087ABC0-D89D-11DE-8A39-0800200C9A66" # https://github.com/mkdynamic/made-of-code-tmbundle
+showInvisibles = true
+
+# Show hidden files and folders
+include = "{$include,.*}"
+exclude = "{$exclude,.git}"
+exclude = "{$exclude,.tmp}"
+

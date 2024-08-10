@@ -1,0 +1,65 @@
+[push]
+  default = current
+
+[user]
+	name = Shaheen Ghiassy
+	useConfigOnly = true
+	email = sghiassy@linkedin.com
+
+[merge]
+  keepBackup = false
+  tool = p4merge
+
+[mergetool]
+  keepBackup = false
+
+[mergetool "p4merge"]
+  cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  keepTemporaries = false
+  trustExitCode = false
+  keepBackup = false
+
+[diff]
+  tool = p4mergetool
+
+[difftool "p4mergetool"]
+  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+
+[core]
+  excludesFile = ~/.gitignore_global
+  editor = vim
+
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+
+[alias]
+  shaheen = status
+
+# http://caiustheory.com/git-git-git-git-git/
+[alias]
+  git = !exec git
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[grep]
+  lineNumber = true
+
+[color]
+  ui = auto
+
+
+[includeIf "gitdir/i:~/Dev/"]
+    path = .gitconfig_personal
+[includeIf "gitdir/i:~/Dev/Groupon/"]
+    path = .gitconfig_groupon
+[init]
+	defaultBranch = main
