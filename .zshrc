@@ -245,11 +245,11 @@ export ANDROID_NDK=~/Library/Android/sdk/ndk-bundle
 export PATH=${PATH}:$ANDROID_NDK
 
 # ###################
-# # Python PyEnv (switched to using Poetry... https://stackoverflow.com/a/73365831/1179897)
+# # Python PyEnv
 # ###################
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 
 ###################
